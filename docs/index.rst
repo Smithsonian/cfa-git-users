@@ -4,18 +4,15 @@
    contain the root `toctree` directive.
 
 #################################################
-Center for Astrophysics Git Users's Documentation
+Center for Astrophysics Git Users Documentation
 #################################################
 .. toctree::
-   :maxdepth: 5
 
+   self
    si-org
    repos
    primer
 
 Help
 ====
-email the user list git-users@cfa.harvard.edu
-
-:ref:`search`
-
+Email the user list git-users@cfa.harvard.edu
