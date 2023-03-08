@@ -23,7 +23,7 @@ source_suffix = {
 }
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ['requirements.txt']
 
 
 
