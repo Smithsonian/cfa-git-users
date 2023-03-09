@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'CfA Git Users'
-copyright = '2023, CfA Git Users'
-author = 'CfA Git Users'
+copyright = '2023, Center for Astrophysics | Harvard & Smithsonian'
+author = 'Cem Onyuksel'
 release = '0.1'
 
 # -- General configuration ---------------------------------------------------
@@ -30,6 +30,6 @@ exclude_patterns = ['requirements.txt']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'furo'
+html_theme = 'sphinx_rtd_theme'
 html_title = "CfA Git Users Documentation"
 html_static_path = ['_static']
