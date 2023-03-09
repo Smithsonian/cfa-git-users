@@ -33,3 +33,4 @@ exclude_patterns = ['requirements.txt']
 html_theme = 'sphinx_rtd_theme'
 html_title = "CfA Git Users Documentation"
 html_static_path = ['_static']
+html_css_files = ['css/mod_theme.css']

@@ -3,17 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-###############################################
+***********************************************
 Center for Astrophysics Git Users Documentation
-###############################################
-
-********
-Contents
-********
+***********************************************
 .. toctree::
 
    si-org
    github
-   repos
-   primer
+   git-primer
+   github-primer
    help

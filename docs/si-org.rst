@@ -4,6 +4,8 @@ Smithsonian GitHub Organization
 Smithsonian Institution's `GitHub Organization <https://docs.github.com/en/organizations>`_ is
 at https://github.com/Smithsonian/.
 
+.. image:: _static/images/si-org\ home\ member.png
+
 It is an enterprise account with the full features of GitHub. As an enterprise organization,
 we can make unlimited private and internal repositories. Also, we can fine-tune repository access controls.
 

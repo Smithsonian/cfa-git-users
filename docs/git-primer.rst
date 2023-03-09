@@ -21,6 +21,6 @@ Using Git
 =========
 clone, commit, pull, push, log, status
 
-Git Resources
-=============
+More Git Resources
+==================
 
