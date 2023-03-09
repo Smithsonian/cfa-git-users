@@ -6,6 +6,10 @@
 ***********************************************
 Center for Astrophysics Git Users Documentation
 ***********************************************
+.. note::
+
+   Smithsonian's GitHub Organization is at https://github.com/Smithsonian/.
+
 .. toctree::
 
    si-org
