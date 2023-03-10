@@ -13,7 +13,7 @@ Center for Astrophysics Git Users Documentation
 .. toctree::
 
    si-org
-   github
+   git-github
    git-primer
    github-primer
    help
