@@ -2,14 +2,17 @@
 #
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
+from datetime import datetime
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'CfA Git Users'
-copyright = '2023, Center for Astrophysics | Harvard & Smithsonian'
-author = 'Cem Onyuksel'
-release = '0.1'
+now = datetime.now()
+author = 'Center for Astrophysics | Harvard & Smithsonian'
+copyright = "{}, {}".format(now.year, author)
+version = '1.0'
+release = version
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -24,8 +27,6 @@ source_suffix = {
 
 templates_path = ['_templates']
 exclude_patterns = ['requirements.txt']
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
