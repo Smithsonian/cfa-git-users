@@ -35,3 +35,9 @@ html_theme = 'sphinx_rtd_theme'
 html_title = "CfA Git Users Documentation"
 html_static_path = ['_static']
 html_css_files = ['css/mod_theme.css']
+
+# -- Options for LaTeX PDF output --------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
+latex_elements = {
+  'extraclassoptions': 'openany,oneside'
+}
