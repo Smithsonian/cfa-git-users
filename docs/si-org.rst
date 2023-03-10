@@ -11,8 +11,8 @@ at https://github.com/Smithsonian/.
 As such, we have access to all of the features of GitHub. We can make unlimited private
 and internal repositories, and we can fine-tune repository access controls.
 
-In the future, Smithsonian plans to add multiple Organizations under the Enterprise -
-for example, breaking CfA out into its own Org - but as of now, we're all using the
+In the future, Smithsonian plans to add multiple Organizations under the Enterprise --
+for example, breaking CfA out into its own Org -- but as of now, we're all using the
 Smithsonian Organization.
 
 Join

@@ -57,9 +57,7 @@ See :any:`more-git` for more extensive tutorials.
 
 git clone
 -------------
-Grab a copy of a repository from the URL provided.
-
-.. code-block:: bash
+Grab a copy of a repository from the URL provided. ::
 
     $ git clone git@github.com:Smithsonian/cfa-git-users.git
     Cloning into 'cfa-git-users'...
@@ -74,9 +72,8 @@ Grab a copy of a repository from the URL provided.
 
 git status
 ----------
-View the statius of the repository.
+View the statius of the repository. ::
 
-.. code-block:: bash
     $ git status
     On branch main
     Your branch is up to date with 'origin/main'.
@@ -95,27 +92,84 @@ View the statius of the repository.
 
     no changes added to commit (use "git add" and/or "git commit -a")
 
+git add
+-------
+Stage a file to be comitted. ::
 
-``git commit``
---------------
+    $ git add git-github.rst
+    $ git status
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+    new file:   git-github.rst
+
+    Changes not staged for commit:
+    (use "git add/rm <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+    modified:   git-primer.rst
+    deleted:    github.rst
+    modified:   index.rst
+    modified:   si-org.rst
+
+git commit
+----------
+Commit a snapshot of the files. ::
+
+    $ git commit -m "update docs"
+    [main 5fd9f1e] update docs
+    4 files changed, 116 insertions(+), 8 deletions(-)
+    rename docs/{github.rst => git-github.rst} (100%)
+
+git pull
+--------
+Update your local directory with the contents from the remote repository. :::
+
+    $ git pull
+    Already up to date.
+
+git push
+--------
+Send your local changes to the remote repository. ::
+
+    $ git push
+    Enumerating objects: 11, done.
+    Counting objects: 100% (11/11), done.
+    Delta compression using up to 16 threads
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (6/6), 2.08 KiB | 1.04 MiB/s, done.
+    Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+    To github.com:Smithsonian/cfa-git-users.git
+    b57a6fc..5fd9f1e  main -> main
 
 
+git log
+-------
+Show a log of the previous commits. ::
 
-``git pull``
-------------
+    $ git log --oneline
+    5fd9f1e (HEAD -> main, origin/main, origin/HEAD) update docs
+    b57a6fc add note on front page
+    f79ecfe more updates
+    7097b47 add a couple images
+    ead1c28 don't use cache
+    43096ed update requirements
+    6083458 update docs
+    baaeda2 use furo theme, update si-org page
+    6a8adb7 add .gitkeep files
+    bea5821 Update README.md
+    3ec6262 flatter dir structure
+    61f11c8 some structure and github deploy action
+    6fc244b skeleton of documentation
+    d9d9889 Initial commit
 
-``git push``
-------------
+git help
+--------
+Show help for a command. ::
 
-``git log``
------------
-
-``git status``
---------------
-
-``git help``
-------------
-clone, commit, pull, push, log, status
+    $ git help
 
 .. _more-git:
 
