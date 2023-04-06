@@ -3,17 +3,17 @@
 ## Xilinx Vivado
 Put your design into a git repository. Your directory structure should follow this format:
 
-   **<project_name>**
-
-   - **src** *This is where all your Verilog files go.*
-      - **constrs_n** *This is where constraints go (suffixed to refer to different constraint
-      sets or runs).*
-   - **ip** *This is where any Xilinx IP you generate goes.*
-   - **sim** *This is where your simulation files go.*
-   - **build** *This is where your build tcl script goes and where the Vivado project lives.*
+```
+<project_name>
+|-- src              // Verilog files go here.
+|   `-- constrs_n    // Constraints go here, with suffixes for different constraint sets or runs.
+|-- ip               // Xilinx IP goes here.
+|-- sim              // Simulation files go here.
+`-- build            // Tcl build script and Vivado project lives here.
+```
 
 When starting a local project for the first time, set up this file structure and create your Vivado
-project in a subfolder in build: `<project_name>/build/<project_name>`. Do not copy design files
+project in a subfolder in `build` as `<project_name>/build/<project_name>`. Do not copy design files
 into the local Vivado project or create new files in the local project. Keep them in the `src`, `ip`,
 and `sim` folders. Starting the project with this file structure will make initializing the repository
 much simpler.
@@ -22,12 +22,12 @@ Vivado creates a lot of file clutter in a project that isn’t necessary to incl
 To keep the repo neat and easy to manage, only the necessary sources, ip, and simulation files
 should be included.
 
-A tcl build script can be used to restore the project to its most recent state. To generate this
+A Tcl build script can be used to restore the project to its most recent state. To generate this
 script:
    1. Select *File→Project→Write Tcl…* in the Vivado gui with the project open.
    1. Deselect all options/check boxes in the menu that opens.
    1. Save the resulting file `<project_name>.tcl` to the `<project_name>/build` folder in
-   the repo. You do not need to make any modifications to this tcl file.
+   the repo. You do not need to make any modifications to this Tcl file.
 
 There may be times when, in creating or adding files to a project, a file or ip is placed in the
 wrong location. This is usually a result of either selecting “copy files into project” or having an
@@ -52,10 +52,10 @@ script using *Tools→Run Tcl Script*. The Vivado project will be created in the
 `<project_name>/build` folder.
 
 ````{note}
-Any time a new file is added to the project, the tcl build script must be regenerated.
+Any time a new file is added to the project, the Tcl build script must be regenerated.
 When pulling the repo, it is best practice to delete the current local Vivado project in the
 `<project_name>/build/<project_name>` folder. As long as all design files are correctly located in
-the `src`, `ip`, and `sim` folders, no important project data will be lost. Rerun the tcl build script
+the `src`, `ip`, and `sim` folders, no important project data will be lost. Rerun the Tcl build script
 to ensure you are working with the most recent project state.
 ````
 
