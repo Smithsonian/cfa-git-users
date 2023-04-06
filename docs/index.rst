@@ -16,4 +16,5 @@ Center for Astrophysics Git Users Documentation
    git-github
    git-primer
    github-primer
+   workflows
    help
