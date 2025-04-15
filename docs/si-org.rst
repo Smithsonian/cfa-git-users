@@ -19,11 +19,12 @@ Join
 ====
 To join the Smithsonian GitHub Organization, please:
 
-    #. Make a GitHub account if you don't already have one.
-    #. Fill out this Google Form: https://forms.gle/XsRtjRTidx8ivuBc6
+    #. Make a GitHub account if you don't already have one. We recommend using your @cfa.harvard.edu email address.
+    #. As of April 15, 2025, please submit an `IT ServiceNow ticket <https://smithsonianprod.servicenowservices.com/it?id=sc_cat_item&sys_id=9f9fa7bd1b545c10520ba82eac4bcbbf>`_.
 
-We will aggregate the form responses and send them on to the SI OCIO GitHub admins to get
-members added to the Org.
+        * Select "Github" as the service.
+        * Include your name, email address, and GitHub username in the description.
+        * If you are not SI, find an SI friend to submit the request on your behalf.
 
 Teams
 =====
